@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles.css';
+import NominatedList from './components/NominatedList';
+import { MovieProvider } from './store/movieStore';
+import MovieSection from './components/MovieSection';
+import TopBar from './components/TopBar';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MovieProvider>
+        <TopBar />
+        <div className="row">
+          <div className="col-9 movies">
+            <MovieSection />
+          </div>
+          <div className="col nominations">
+            <NominatedList />
+          </div>
+        </div>
+      </MovieProvider>
     </div>
   );
 }
-
-export default App;
