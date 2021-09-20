@@ -10,10 +10,10 @@ export default function App() {
       <MovieProvider>
         <TopBar />
         <div className="row">
-          <div className="col-9 movies">
+          <div className="col-md-9 movies">
             <MovieSection />
           </div>
-          <div className="col nominations">
+          <div className="col-md-3 nominations">
             <NominatedList />
           </div>
         </div>

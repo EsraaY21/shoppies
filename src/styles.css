@@ -1,9 +1,7 @@
 body {
   box-sizing: border-box;
   background: #152638;
-  color: beige;
-  padding-bottom: 20px;
-  align-items: center;
+  color: #f6f2c0;
 }
 
 .bar {
