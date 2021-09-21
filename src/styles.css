@@ -157,9 +157,9 @@ h6 {
 
 .NominationBadge {
   background-color: wheat;
-  opacity: 80%;
   border-radius: 10px;
   margin-top: 4rem;
-  color: #152638;
+  color: white;
   padding: 2rem;
+  font-weight: bold;
 }
