@@ -7,13 +7,13 @@ export default function MoviesList() {
 
   return (
     <div className="MoviesList">
-      <div class="row">
+      {/* <div class="row">
         {state.movies.map((movie) => (
           <div class="col-md-4">
             <Movie key={movie.id} movie={movie} />
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }
