@@ -2,10 +2,12 @@ import { useContext } from 'react';
 import { MovieContext, ACTIONS } from '../store/movieStore';
 import useFetch from '../hooks/useFetch';
 
+const API_KEY = process.env.REACT_APP_API_KEY;
+
 export default function Search() {
   const { state, dispatch } = useContext(MovieContext);
   // const API_URL = `https://www.omdbapi.com/?s=${state.search}&type=movie&apikey=f5a645be`;
-  const API_URL = `https://api.themoviedb.org/3/search/movie?api_key=65c07bc4335c7b032cc8ba3d4e2695c7&language=en-US&query=${state.search}&page=1`;
+  const API_URL = `https://api.themoviedb.org/3/search/movie?api_key=${REACT_APP_API_KEY}&language=en-US&query=${state.search}&page=1`;
 
   useFetch(API_URL);
 
